@@ -1,0 +1,59 @@
+From 4b6888fa48e573212df187971bef1d42e009407f Mon Sep 17 00:00:00 2001
+From: KongVV <proxy_15@mail.ru>
+Date: Wed, 11 Oct 2017 10:56:10 +0700
+Subject: [PATCH] {My first java main class}
+
+---
+ IdeaProjects2/IdeaProjects2.iml         | 12 ++++++++++++
+ IdeaProjects2/src/com/company/Main.java | 20 ++++++++++++++++++++
+ 2 files changed, 32 insertions(+)
+ create mode 100644 IdeaProjects2/IdeaProjects2.iml
+ create mode 100644 IdeaProjects2/src/com/company/Main.java
+
+diff --git a/IdeaProjects2/IdeaProjects2.iml b/IdeaProjects2/IdeaProjects2.iml
+new file mode 100644
+index 0000000..d5c0743
+--- /dev/null
++++ b/IdeaProjects2/IdeaProjects2.iml
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
++
+diff --git a/IdeaProjects2/src/com/company/Main.java b/IdeaProjects2/src/com/company/Main.java
+new file mode 100644
+index 0000000..54c39c4
+--- /dev/null
++++ b/IdeaProjects2/src/com/company/Main.java
+@@ -0,0 +1,20 @@
++package com.company;
++
++import java.io.PrintStream;
++import java.util.Scanner;
++
++
++public class Main {
++    private static void inOut(Scanner in, PrintStream out){
++        while(in.hasNext()){
++            out.println(in.next());
++        }
++    }
++
++    public static void main(String[] args) {
++	// write your code here
++        Scanner in = new Scanner(System.in);
++        PrintStream out = System.out;
++        inOut(in, out);
++    }
++}
+-- 
+2.14.2.windows.2
+
