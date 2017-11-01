@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.lecs.Stacks.Fixed;
 import com.company.lecs.Stacks.Stack;
 import com.company.lecs.Stacks.Stacksofstrings;
 import jdk.nashorn.api.tree.WhileLoopTree;
@@ -17,8 +18,8 @@ public class Main {
         }
     }
 
-    private  static void Stack(Scanner in, PrintStream out){
-         Stack<Integer> stack = new Stacksofstrings();
+    private  static void stack(Scanner in, PrintStream out){
+         Fixed stack = new Fixed(10);
         while (in.hasNext()) {
             String s = in.next();
             if ((s.equals("-"))) {
@@ -33,6 +34,7 @@ public class Main {
 	// write your code here
         Scanner in = new Scanner(System.in);
         PrintStream out = System.out;
-        Stacksofstrings(in, out);
+
+        stack(in,out);
     }
 }
