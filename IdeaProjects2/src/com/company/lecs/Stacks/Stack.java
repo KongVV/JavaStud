@@ -15,7 +15,7 @@ public class Stack<Item> {
         return  first.item;
     }
 
-    public void push (Item item) {
+    public void push (String item) {
         size++;
         Node oldFirst = first;
         first = new Node();
